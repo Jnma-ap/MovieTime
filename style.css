@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* ---- variables ---- */
+:root{
+  --main-color-blue: #03949D;
+  --light-color-blue: #AEDCDF;
+  --main-dark-color-gray: #24282D;
+  --medium-dark-color-gray: #394048;
+  --light-gray: #FAFAFA;
+  --input-field-color: #F3F3F3;
+  --title: 'Krona One';
+  --sub-title: 'Quicksand';
+  --xl: 25px;
+  --lg: 16px;
+  --md: 12px;
+  --sm: 8px;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1d1d;
+}
+/* ---- Header ---- */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ---- Nav ---- */
+.logo{
+  font-family: var(--title);
+  font-size: var(--xl);
+  font-weight: 200; 
+  color: var(--medium-dark-color-gray);    
+  line-height: 22px;
+  margin-top: 20px;
+  padding: 0px 0px 0px 38px;
+}
+header ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 0px 0px;
+  
+}
+header a{
+  font-family: var(--sub-title);
+  color: var(--main-dark-color-gray);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+header a:hover{
+  color: var(--main-color-blue);
+}
+.icon{
+  padding: 6px;
+}
+/* ---- Section - Busqueda ---- */
+.busqueda-conteiner{
+  border-radius: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 8px auto 0px auto;
+  padding: 33px ;
+}
+.title{
+  font-family: var(--title);
+  color: var(--main-color-blue);
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.sub-title{
+  font-family: var(--sub-title);
+  color: var(--medium-dark-color-gray);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 6px 0px 23px 0px;   
+}
+.busqueda{
+  border-radius: 25px;
+  border: 2px solid var(--main-color-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  width: 40%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.input-search{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  flex-grow: 1;
+  color: var(--medium-dark-color-gray);
+}
+::placeholder{
+  color: var(--main-color-blue);
+}
+button{
+  border: none;
+  background-color: transparent;
+}
+/* ---- Div ---- */
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.contenedor .pelicula {
+  text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.paginacion {
+  position: fixed;
+  bottom: 0;
+  background: var(--light-color-blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+/* #btnBusqueda{
+  pronto
+} */
+.paginacion button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background: var(--main-color-blue);
+  color: #fff;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  transition: 0.3s ease all;
+}
+
+.paginacion button:hover {
+  background: var(--medium-dark-color-gray);
+}
+/* Resposive */
+@media (435px <= width <= 532px) {
+    .busqueda{
+        width: 75%;
+    }
+}
+@media (312px <= width <= 434px) {
+    .logo{
+        font-size: 21px;
+        padding: 0px 0px 0px 15px;
+    }
+    header ul li{
+        padding: 0px 16px 0px 0px;
+    }
+    .busqueda-conteiner {
+        width: 90%;
+        margin: 25px 0px 23px 0px;
+        padding: 15px;
+    }
+    .busqueda{
+        width: 94%;
+    }
+}
+@media (124px <= width <= 311px) {
+    .logo{
+        font-size: 21px;
+        padding: 0px 0px 0px 15px;
+    }
+    header ul li{
+        padding: 0px 8px 0px 0px;
+    }
+    .busqueda-conteiner {
+        width: 90%;
+        margin: 25px 0px 23px 0px;
+        padding: 15px;
+    }
+    .busqueda{
+        width: 95%;
+    }
+}

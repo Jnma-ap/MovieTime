@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title></title>
+    </head>
+    <body>
+        <!-- ---- Header ---- -->
+        <header>
+            <h1 class="logo">MovieTimes. 🎬</h1>
+            <!-- ---- Nav ---- -->
+            <nav>
+                <ul>
+                    <li>
+                        <img class="icon" src="assect/bx-bookmark.svg" alt="" />
+                        <a href="#">Pelis Saved</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ---- Section - Busqueda ---- -->
+        <section class="busqueda-conteiner">
+            <h1 class="title">Busca tu pelica favorita...</h1>
+            <p class="sub-title">
+                Puedes buscar por categoria o por pelicula 🎞️
+            </p>
+
+            <div class="busqueda">
+                <input
+                    type="text"
+                    class="input-search"
+                    placeholder="“Acción” o “Creed III” - click 🔍"
+                />
+                <button>
+                    <img src="assect/bx-search.svg" alt="" id="btnBusqueda" />
+                </button>
+            </div>
+        </section>
+
+        <!-- ---- Card img ---- -->
+        <div class="contenedor" id="contenedor"></div>
+
+        <div class="paginacion">
+            <button id="btnAnterior">Anterior</button>
+            <button id="btnSiguiente">Siguiente</button>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
