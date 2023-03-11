@@ -36,11 +36,11 @@ header{
 /* ---- Nav ---- */
 .logo{
   font-family: var(--title);
-  font-size: var(--xl);
+  font-size: var(--lg);
   font-weight: 200; 
   color: var(--medium-dark-color-gray);    
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0px 0px 0px 38px;
 }
 header ul li{
@@ -48,7 +48,7 @@ header ul li{
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px 0px 0px;
-  
+  margin-top: 10px;
 }
 header a{
   font-family: var(--sub-title);

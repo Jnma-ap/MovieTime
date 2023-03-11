@@ -99,11 +99,11 @@ data.map((pelicula) => {
         <img class="poster" src="${pelicula.poster}">
         <h3 class="titulo">${pelicula.title}</h3>
         <a
-        href="${pelicula.link}"
-        target="_blank"
-        ><img src="assect/bx-link.svg" alt="" />
+            href="${pelicula.link}"
+            target="_blank"
+            ><img src="assect/bx-link.svg" alt="" />
         </a>
-        </div> `;
+    </div> `;
 });
 
 // Pronto
