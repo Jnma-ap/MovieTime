@@ -116,14 +116,18 @@ button {
     width: 90%;
     max-width: 1000px;
     margin: 40px auto 100px auto;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
-
+.star {
+    display: flex;
+    margin-top: 7px;
+    gap: 10px;
+}
 .contenedor .pelicula {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor .pelicula .titulo {
@@ -148,7 +152,7 @@ button {
     padding: 10px;
 }
 /* #btnBusqueda{
-  pronto
+
 } */
 .paginacion button {
     cursor: pointer;
@@ -181,7 +185,6 @@ button {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
     }
     .contenedor .pelicula .poster {
         width: 65%;
@@ -196,10 +199,9 @@ button {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
     }
     .contenedor .pelicula .poster {
-        width: 80%;
+        width: 65%;
     }
 }
 @media (312px <= width <= 434px) {
@@ -223,10 +225,9 @@ button {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
     }
     .contenedor .pelicula .poster {
-        width: 80%;
+        width: 70%;
     }
 }
 @media (124px <= width <= 311px) {
@@ -250,9 +251,8 @@ button {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
     }
     .contenedor .pelicula .poster {
-        width: 80%;
+        width: 75%;
     }
 }

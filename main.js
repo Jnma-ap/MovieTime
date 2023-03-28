@@ -49,6 +49,10 @@ const cargarPeliculas = async() => {
                     <div class="pelicula">
                         <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
                         <h3 class="titulo">${pelicula.title}</h3>
+                        <div class="star">
+                            <img src="assect/bxs-star.svg" alt="">                            
+                            <p class"vote">${pelicula.vote_average}</p>
+                        </div>
                     </div>
                 `;
             });
