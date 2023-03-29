@@ -68,7 +68,7 @@ const cargarPeliculas = async () => {
 
         } else {
             Toastify({
-                text: "No Hay ",
+                text: "Error",
                 duration: 900,
                 destination: "https://github.com/apvarun/toastify-js",
                 close: true,
@@ -85,7 +85,7 @@ const cargarPeliculas = async () => {
     } catch (error) {
         console.log(error);
         Toastify({
-            text: "No Hay ",
+            text: "Error",
             duration: 900,
             destination: "https://github.com/apvarun/toastify-js",
             close: true,
