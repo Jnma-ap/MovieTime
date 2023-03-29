@@ -16,8 +16,10 @@
             href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="icon" href="assect/logo.png">
         <link rel="stylesheet" href="style.css" />
-        <title></title>
+        <title>MovieTimes. 🎬</title>
     </head>
     <body>
         <!-- ---- Header ---- -->
@@ -37,14 +39,14 @@
         <section class="busqueda-conteiner">
             <h1 class="title">Busca tu pelica favorita...</h1>
             <p class="sub-title">
-                Puedes buscar por categoria o por pelicula 🎞️
+                Puedes buscar por el nombre de la pelicula 🎞️
             </p>
 
             <div class="busqueda">
                 <input
                     type="text"
                     class="input-search"
-                    placeholder="“Acción” o “Creed” / Click 🔍"
+                    placeholder="Buscar"
                 />
                 <button>
                     <img src="assect/bx-search.svg" alt="" id="btnBusqueda" />
@@ -60,6 +62,7 @@
             <button id="btnSiguiente">Siguiente</button>
         </div>
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="main.js"></script>
     </body>
 </html>
