@@ -60,26 +60,24 @@ const cargarPeliculas = async () => {
 
                     if (title.includes(term)) {
                         card.style.display = "block";
+                        Toastify({
+                            text: "Resultado",
+                            duration: 900,
+                            destination: "https://github.com/apvarun/toastify-js",
+                            close: true,
+                            gravity: "top",
+                            position: "right",
+                            stopOnFocus: true,
+                            style: {
+                                background: "linear-gradient(to right, #1bc5b1, #03949d)",
+                            },
+                            onClick: function () {},
+                        }).showToast();
                     } else {
                         card.style.display = "none";
                     }
                 });
             });
-
-        } else {
-            Toastify({
-                text: "Error",
-                duration: 900,
-                destination: "https://github.com/apvarun/toastify-js",
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-                style: {
-                    background: "linear-gradient(to right, #1bc5b1, #03949d)",
-                },
-                onClick: function () {},
-            }).showToast();
         }
 
     } catch (error) {
